@@ -1,0 +1,394 @@
+/* common-css-star */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    margin: 0px auto;
+   /* border: 1px solid red;*/
+}
+ul{
+    padding: 0px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.d-flex{
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+title h3{
+    color: #13c5dd;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+}
+title h2{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+}
+h1{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+}
+img{
+    display: block;
+    width: 100%;
+}
+/* common-css-end */
+/* top-nav-code-start */
+.top-nav{
+    border-top: 1px solid   rgba(132,142,159.5);
+    border-bottom: 1px solid rgba(132,142,159.5);
+    padding: 15px;
+}
+.nav-inner .content-info a{
+color: #848e9f;
+font-size: 16px;
+transition: 0.5s all;
+}
+.nav-inner .content-info a:hover{
+    color: #13C5DD;
+}
+.nav-inner .content-info ul li:first-child a::after{
+    content: "";
+    border: 1px solid #848e9f; 
+   margin: 0px 10px;
+}
+.nav-inner .soccial-info a{
+    padding: 0px 10px;
+    transition: 0.5s all;
+}
+.nav-inner .soccial-info a:hover{
+    color: #13C5DD;
+}
+/* top-nav-code-end */
+
+/* navbar-code-start */
+.navbar-section{
+   /* border: 1px solid red;*/
+   margin: 15px 0px 0px 0px
+}
+.navbar-inner .navbar-logo a{
+color: #13C5DD;
+font-size: 40px;
+font-weight: 800;
+font-family:"Roboto Condensed", sans-serif;
+}
+.navbar-inner .navbar-content ul li a.active{
+color: #13C5DD;
+}
+.navbar-inner .navbar-content ul li a{
+   color: #1D2A4D;
+    font-size: 18px;
+    font-family: Jost, sans-serif;
+    font-weight: 800;
+    line-height: 3;
+    transition: 0.5s all;
+    padding: 0px 10px;
+    margin-left: 10px;
+    position: relative;
+}
+.navbar-inner .navbar-content ul li a:hover{
+    color: #13c5dd;
+}
+.navbar-inner .navbar-content ul li a::after{
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 0;
+    left: 0px;
+    bottom: -15px;
+    background: #13C5DD;
+    transition: 0.5s all;
+}
+.navbar-inner .navbar-content ul li a:hover::after{
+width: 100%;
+}
+/* navbar-code-end */
+
+/* bannar-code-start */
+header{
+    background: url(../img/hero.jpg);
+     background-size: cover;
+}
+.header-content {
+    max-width: 700px;
+    padding: 80px 0px;
+}
+.header-content h2{
+    color: #13c5dd;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 10px 0px;
+    position: relative;
+    display: inline-block;
+}
+.header-content h2::after{
+    position: absolute;
+    content: '';
+    left: 0px;
+    bottom: 0px;
+    height: 4px;
+    width: 100%;
+    background: #8F9FAE;
+}
+.header-content h1{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 30px 0px
+}
+.header-content a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: Roboto, sans-serif;
+    background: #fff;
+    border-radius: 40px;
+    padding: 15px 30px;
+    margin-right: 15px;
+    transition: 0.5s all;
+    display: inline-block;
+}
+.header-content a:last-child{
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+}
+.header-content a:last-child:hover{
+    color: #000;
+    background: #fff;
+}
+/* bannar-code-start */
+
+/* about-code-start */
+section.about-section {
+    margin: 80px 0px;
+}
+.about-section .about-poster {
+flex: 2;
+padding-right: 40px;
+}
+.about-section .about-poster img{
+    height: 100%;
+    border-radius: 10px;
+}
+.about-section .about-content{
+    flex: 3;
+ }
+ .about-section .about-content h3{
+    color: #13c5dd;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+    position: relative;
+    display: inline-block;
+ }
+ .about-section .about-content h3::after{
+ position: absolute;
+  content: '';
+  left: 0px;
+  height: 4px;
+  width: 100%;
+  bottom: 0px;
+  background: #DEE2E6;
+ }
+ .about-section .about-content h2{
+    color: #1d2a4d;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: "Roboto Condensed", sans-serif;
+ }
+ .about-section .about-content p{
+    color: #848e9f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 20px;
+    font-family: Roboto, sans-serif;
+ }
+ .about-us-features{
+    margin: 20px 0px;
+ }
+ .about-us-features .features-item{
+    flex: 1;
+    margin: 0px 5px;
+    background: #EFF5F9;
+    text-align: center;
+   border-radius: 50%;
+   padding: 30px;
+ }
+ .about-us-features i{
+    color: #13c5dd;
+    font-size: 48px;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+ }
+ .about-us-features .features-item p{
+    color: #1d2a4d;
+    font-size: 16px;
+    font-weight: 600; 
+    font-family: "Roboto Condensed", sans-serif;
+ }
+ .about-us-features .features-item p:last-child{
+    color: #13c5dd;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+    line-height: 0.5;
+    margin: 0px;
+ }
+/* about-code-end */
+
+/*secrive-section start*/
+.service-inner .title{
+    text-align: center;
+    margin: 0px auto 30px auto;
+    max-width: 400px;
+}
+.service-inner .title h3{
+    color: #13c5dd;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+    position: relative;
+    display: inline-block;
+}
+.service-inner .title h3::after{
+    position: absolute;
+    content: '';
+    left: 0px;
+    bottom: -5px;
+    height: 5px;
+    width: 100%;
+    background: #DEE2E6;
+}
+.service-inner .title h2{
+    color: #1D2A4D;
+    font-size: 56px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+}
+/* service-features start */
+.service-features.d-flex {
+    margin-bottom: 40px;
+}
+.service-features .secvice-item{
+    flex: 1;
+    background: #EFF5F9;
+    margin: 0px 20px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+.service-features .secvice-item i{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 800;
+    font-family: "Font Awesome 5 Free";
+    background: #13C5DD;
+    padding: 50px;
+    display: inline-block;
+    border-radius: 77% 39%;
+}
+.service-features .secvice-item h4{
+    color: #1d2a4d;
+    font-size: 24px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 800;
+    margin: 20px 0px;
+}
+.service-features .secvice-item p{
+    color: #848e9f;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+/* service-features end */
+/*secrive-section end*/
+
+/* booking-code-start */
+.booking-section{
+    background: #13C5DD;
+}
+.booking-content{
+    flex: 1;
+    padding: 90px 60px;
+}
+.booking-form{
+    flex: 1;
+}
+.booking-section .booking-inner .booking-content h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+    position: relative;
+    display: inline-block;
+}
+.booking-section .booking-inner .booking-content h3::after{
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 100%;
+    left: 0px;
+    bottom: -5px;
+    background: #DEE2E6;
+}
+.booking-section .booking-inner .booking-content h2{
+    color: #1D2A4D;
+    font-size: 56px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+    margin-top: 10px;
+}
+.booking-section .booking-inner .booking-content p{
+    color: #FFFFFF;
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 30px 0px;
+}
+.booking-section .booking-inner .booking-content a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: Roboto, sans-serif;
+    background: #192441;
+    border-radius: 40px;
+    padding: 20px 50px;
+    margin-right: 15px;
+    transition: 0.5s all;
+    display: inline-block;
+}
+.booking-section .booking-inner .booking-content a:last-child{
+    color: #192441;
+    background: transparent;
+    border: 1px solid #192441;
+}
+.booking-section .booking-inner .booking-content a:last-child:hover{
+    color: #fff;
+    background: #192441;
+}
+/* booking-code-end */
